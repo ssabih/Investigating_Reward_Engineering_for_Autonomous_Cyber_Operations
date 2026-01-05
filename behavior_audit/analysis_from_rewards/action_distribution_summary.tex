@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\centering
+\\begin{tabular}{lccc}
+\toprule
+Method & Action & Count & Percent \\
+\midrule
+Reward Machine DQN & Scan/Idle (-0.1) & 135254 & 81.725 \\
+Reward Machine DQN & Correct Compromise (+9.9) & 19845 & 11.991 \\
+Reward Machine DQN & Wrong Compromise (-10.1) & 10399 & 6.283 \\
+Reward Machine DQN & Other & 0 & 0.0 \\
+Shaped DQN & Scan/Idle (-0.1) & 119305 & 75.144 \\
+Shaped DQN & Correct Compromise (+9.9) & 18719 & 11.79 \\
+Shaped DQN & Wrong Compromise (-10.1) & 20744 & 13.066 \\
+Shaped DQN & Other & 0 & 0.0 \\
+\bottomrule
+\\end{tabular}
+\caption{Action-type distribution derived from environment reward semantics. Scan/Idle corresponds to -0.1 per step; Correct Compromise to +9.9; Wrong Compromise to -10.1.}
+\label{tab:action-dist}
+\end{table}

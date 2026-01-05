@@ -1,0 +1,13 @@
+\begin{table}[ht]
+\centering
+\\begin{tabular}{lccccccccc}
+\toprule
+Method & Mean steps & Mean scans & Mean compromises & Wrong-compromise rate (episodes w/comp) & Scan-to-comp ratio & Mean env reward & Mean correct compromises & Mean wrong compromises & Episodes counted \\
+\midrule
+Reward Machine DQN & 16.55 & 13.525 & 3.024 & 0.221 & 6.058 & 7.791 & 1.984 & 1.04 & 10000 \\
+Shaped DQN & 15.877 & 11.93 & 3.946 & 0.322 & 4.991 & -3.613 & 1.872 & 2.074 & 10000 \\
+\bottomrule
+\\end{tabular}
+\caption{Summary of per-episode behavior metrics derived purely from reward semantics. Wrong-compromise rate and Scan-to-comp ratio are computed over episodes that contained at least one compromise attempt.}
+\label{tab:behavior-summary-reward-based}
+\end{table}
